@@ -9,7 +9,8 @@
     <title>iStockPhoto</title>
 </head>
 
-<body>
+<body
+    style="background-image: url(/src/img/istockphoto-1035676256-612x612.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
     <!-- navbar -->
     <nav class="bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -19,7 +20,7 @@
             </a>
             <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button type="button"
-                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-600"
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
@@ -29,25 +30,25 @@
                 <div class="z-50 hidden my-4 text-base list-none divide-y  rounded-lg shadow bg-gray-700 divide-gray-600"
                     id="user-dropdown">
                     <div class="px-4 py-3">
-                        <span class="block text-sm text-gray-900 ">Bonnie Green</span>
-                        <span class="block text-sm  text-gray-500 truncate ">name@flowbite.com</span>
+                        <span class="block text-sm text-white ">Bonnie Green</span>
+                        <span class="block text-sm  text-gray-300 truncate ">name@flowbite.com</span>
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-white">Dashboard</a>
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-gray-600">Dashboard</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-white">Settings</a>
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-gray-600">Settings</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 text-sm hover:bg-gray-100  text-gray-200 hover:text-white">Earnings</a>
+                                class="block px-4 py-2 text-sm hover:bg-gray-100  text-gray-200 hover:text-gray-600">Earnings</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-white">Sign
+                                class="block px-4 py-2 text-sm hover:bg-gray-100 text-gray-200 hover:text-gray-600">Sign
                                 out</a>
                         </li>
                     </ul>
@@ -68,7 +69,7 @@
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
                     <li>
                         <a href="#home"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparentx md:p-0 md:text-blue-500"
+                            class="block py-2 px-3 text-white rounded md:bg-transparentx md:p-0 md:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
                     <li>
@@ -89,14 +90,16 @@
     </nav>
     <!-- navbar end -->
 
-    <div class="bg-gray-800 py-20">
+    <div class="py-20">
 
 
         <!-- home -->
         <section id="home">
             <div class="container py-20 grid grid-cols-1 md:grid-cols-2">
                 <p class="text-2xl text-white ml-24">iStock is an online royalty free, international micro stock
-                    photography provider based in Calgary, Alberta, Canada.</p>
+                    photography provider based in Calgary, Alberta, Canada.The company was founded by Bruce Livingstone
+                    in May 2000, as iStockphoto, a free stock imagery website supported by Livingstone's web development
+                    firm, Evolvs Media.</p>
                 <div class="sm:mx-auto lg:order-last">
                     <img src="img/NFT-bg_remove.png" width="200" alt="">
                 </div>
@@ -593,7 +596,7 @@
         <!-- pricing end -->
 
 
-        <!-- contact -->
+        <!-- contact form -->
         <!-- drawer init and show -->
         <section id="contact">
             <div class="text-center mt-10">
@@ -663,17 +666,66 @@
             </div>
         </section>
 
+        <!-- contact form end -->
+
+        <!-- contact -->
+        <!-- drawer init and toggle -->
+        <div class="text-center">
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                aria-controls="drawer-example">
+                Show drawer
+            </button>
+        </div>
+
+        <!-- drawer component -->
+        <div id="drawer-example"
+            class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+            tabindex="-1" aria-labelledby="drawer-label">
+            <h5 id="drawer-label"
+                class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg
+                    class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path
+                        d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                </svg>Info</h5>
+            <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+
+            <p class="mb-6 text-sm text-gray-400">Supercharge your hiring by taking advantage of our
+                <a href="#" class=" underline text-blue-500 hover:no-underline">limited-time sale</a>
+                for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design job
+                board.</p>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="#"
+                    class="px-4 py-2 text-sm font-medium text-center border rounded-lg focus:outline-none focus:z-10 focus:ring-4 focus:ring-gray-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700">Learn
+                    more</a>
+                <a href="#"
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800">Get
+                    access <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg></a>
+            </div>
+        </div>
         <!-- contact end -->
 
     </div>
 
     <!-- footer -->
-
-
-    <footer class="rounded-lg shadow m-4 bg-gray-800">
+    <footer class="shadow bg-gray-950">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span class="text-sm sm:text-center text-gray-400">© 2023 <a href="https://flowbite.com/"
-                    class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                    class="hover:underline">iStockPhoto™</a>. All Rights Reserved.
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
                 <li>
@@ -691,7 +743,6 @@
             </ul>
         </div>
     </footer>
-
     <!-- footer end -->
 
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
