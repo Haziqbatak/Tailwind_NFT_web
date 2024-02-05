@@ -2284,12 +2284,12 @@ input:checked + .toggle-bg {
     margin-top: 0px;
   }
 
-  .sm\:p-8 {
-    padding: 2rem;
-  }
-
   .sm\:p-2 {
     padding: 0.5rem;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
   }
 
   .sm\:text-center {
