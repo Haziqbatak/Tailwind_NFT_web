@@ -10,10 +10,9 @@
     <title>iStockPhoto</title>
 </head>
 
-<body
-    style="background-image: url(/src/img/istockphoto-1035676256-612x612.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
-    <!-- navbar -->
-    <nav class="bg-gray-900">
+<body>
+
+    <nav class="bg-gray-900 w-full ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./img/NFT-bg_remove.png" class="h-14 w-20" alt="Meta Logo" />
@@ -93,17 +92,16 @@
 
 
     <!-- home -->
-    <div id="home">
-        <div class="container py-20 px-20 mx-auto text-justify lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
-            <p class="text-2xl text-white m-4">iStock is an online royalty free, international micro stock
-                photography provider based in Calgary, Alberta, Canada.The company was founded by Bruce Livingstone
-                in May 2000, as iStockphoto, a free stock imagery website supported by Livingstone's web development
-                firm, Evolvs Media.</p>
-                <div class="md:items-center lg:order-last mx-auto md:mt-28">
-                    <img src="img/NFT-bg_remove.png" width="200" alt="">
-                </div>
+    <div id="home" style="background-image: url('img/istockphoto-1035676256-612x612.jpg');"
+        class="bg-no-repeat bg-cover">
+        <div class="w-full px-2 py-5 md:grid md:grid-cols-2 md:self-center">
+            <p class="text-white text-justify px-3 py-5 lg:text-2xl lg:mt-20 md:text-center">The company was founded by Bruce Livingstone in May
+                2000, as iStockphoto, a free stock imagery website supported by Livingstone's web development firm,
+                Evolvs Media. iStock pioneered the crowd-sourced stock industry and became the original source for
+                user-generated stock photos, vectors and illustrations, and video clips.</p>
+            <img src="img/NFT-bg_remove.png" alt="">
         </div>
-        
+
     </div>
     <!-- home end -->
 
@@ -726,7 +724,8 @@
     <div class="bg-gray-900 py-20">
         <!-- pricing -->
         <section id="pricing">
-            <div class="mt-10 mx-auto px-10 justify-center gap-6 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+            <div
+                class="mt-10 mx-auto px-10 justify-center gap-6 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
                 <div class="w-full max-w-sm p-4 border rounded-lg shadow sm:px-20 bg-gray-700 border-gray-600">
                     <h5 class="mb-4 text-xl font-medium text-gray-400">Free</h5>
                     <div class="flex items-baseline text-white">
@@ -954,9 +953,8 @@
     </div>
 
     <!-- contact form -->
-    <!-- drawer init and show -->
-    <section id="contact">
-        <div class="text-center mt-10">
+    <section id="contact" class="max-h-full bg-no-repeat bg-cover" style=" background-image: url(img/istockphoto-1035676256-612x612.jpg);">
+        <div class="text-center">
             <button
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact"
@@ -967,7 +965,7 @@
 
         <!-- drawer component -->
 
-        <div id="drawer-contact"
+        <div id="drawer-contact"style=" background-image: url(img/istockphoto-1035676256-612x612.jpg);"
             class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
             tabindex="-1" aria-labelledby="drawer-contact-label">
             <h5 id="drawer-label"
@@ -1021,21 +1019,15 @@
                 <a href="#" class="hover:underline">212-456-7890</a>
             </p>
         </div>
+        <div class="text-center">
+            <button
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                aria-controls="drawer-example">
+                Show drawer
+            </button>
+        </div>
     </section>
-
-    <!-- contact form end -->
-
-    <!-- contact -->
-    <!-- drawer init and toggle -->
-    <div class="text-center">
-        <button
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
-            aria-controls="drawer-example">
-            Show drawer
-        </button>
-    </div>
-
     <!-- drawer component -->
     <div id="drawer-example"
         class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
